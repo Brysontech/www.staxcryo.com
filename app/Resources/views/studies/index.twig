@@ -1,0 +1,10 @@
+{% extends 'layout/base.twig' %}
+
+{% block body %}
+<div class="page text-center">
+  {% include 'layout/header.twig' %}
+  <main class="page-content">
+  {% include 'studies/hero.html.twig' %}  
+  {% include 'studies/studies.html.twig' %}    
+  </main>
+{% endblock %}

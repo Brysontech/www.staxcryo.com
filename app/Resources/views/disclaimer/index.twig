@@ -1,0 +1,45 @@
+{% extends 'layout/base.twig' %}
+
+{% block body %}
+<div class="page text-center">
+    {% include 'layout/header.twig' %}
+    <!-- Page Content-->
+    <main class="page-content">
+        <section class="hero" 
+                 style="background-image:url('/images/benefits-backround.jpg'); height:750px;">
+                <div class="swiper-slide">
+                    <div class="swiper-slide-caption">
+                        <div class="shell section-25">
+                            <h1 class="text-gray-light">Services Disclaimer</h1>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section-50 section-md-bottom-95">
+            <div class="shell">
+                    <p class="text-left">
+                        Cryotherapy is not a medical procedure.
+                    </p>
+                    <br />
+                    <p class="text-left">
+                        Cryotherapy has been known to help clients with Athletic 
+                        Recovery, Weight Loss, Health & Wellness and Beauty &amp; 
+                        Anti-Aging however STAXCryo does not guarantee any 
+                        results achieved through our cryotherapy sessions.
+                    </p>
+                    <br />
+                    <p class="text-left">
+                        The benefits of cryotherapy vary based on the 
+                        individual undergoing the treatment and no specific 
+                        guarantees are placed on any results.
+                    </p>
+                    <br />
+                    <p class="text-left">
+                        STAXCryo recommends that clients consult with a medical 
+                        professional prior to using our services to confirm 
+                        whether cryotherapy is appropriate for their health.
+                    </p>
+            </div>
+        </section>
+    </main>
+{% endblock %}

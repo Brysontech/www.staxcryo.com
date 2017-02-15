@@ -1,0 +1,13 @@
+{% extends 'layout/base.twig' %}
+
+{% block body %}
+<div class="page text-center">
+    {% include 'layout/header.twig' %}
+    <main class="page-content">
+    {% include 'treatment/hero.html.twig' %}
+    {% include 'treatment/call-us.html.twig' %}
+    {% include 'treatment/special.html.twig' %}
+    {% include 'treatment/member-pricing.html.twig' %}
+    {% include 'treatment/session-packages.html.twig' %}
+    </main>
+{% endblock %}

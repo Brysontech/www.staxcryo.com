@@ -1,0 +1,29 @@
+{% extends 'layout/base.twig' %}
+
+{% block body %}
+<div class="page text-center">
+  {% include 'layout/header.twig' %}
+  <!-- Page Content-->
+  <main class="page-content">
+    <!-- hero/swiper content -->
+    {% include 'index/swiper.twig' %}
+    
+    <!-- Welcome to StaxCryo -->
+    {% include 'index/welcome.twig' %}
+    
+    <!-- Why choose StaxCryo?-->
+    {% include 'index/why.twig' %}
+    
+    <!-- Our services-->
+    {% include 'index/benefits.twig' %}
+    
+    <!-- What our patients say-->
+    {# include 'index/testimonials.twig' #}
+    
+    <!--How we can help...-->
+    {% include 'index/appointment.twig' %}
+    
+    <!-- Recent news-->
+    {% include 'index/studies.twig' %}
+  </main>
+{% endblock %}

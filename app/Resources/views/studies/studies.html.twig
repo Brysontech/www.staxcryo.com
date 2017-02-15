@@ -1,0 +1,31 @@
+<section class="section-50 section-md-bottom-95">
+    <div class="shell">
+        <div class="range range-xs-center">
+        {% for study in studies %}
+            <div class="cell-sm-6 cell-md-6 reveal-md-flex flex-direction-column">
+                <div style="padding:10px;">
+                    <h3 class="text-dark jo">
+                        {{ study.title }}
+                    </h3>
+                    <h6 class="text-primary text-regular jo">
+                        {{ study.subtitle }}
+                    </h6>
+                    <hr>
+                    <p class="text-dark">
+                        {{ study.text|length > 482 ? study.text|slice(0, 482) ~ '...' : study.text  }}
+                    </p>
+                    <div class="offset-top-auto text-left ep-20">
+                        <a href="{{ study.link }}" class="btn btn-primary" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+            {% if loop.index is divisible by(2) %}  
+            </div>
+            <div class="range range-xs-center">
+            {% endif %}
+        {% endfor %}
+        <div class="cell-sm-6 cell-md-6 reveal-md-flex flex-direction-column">
+            &nbsp;
+        </div>
+        </div>
+</section>

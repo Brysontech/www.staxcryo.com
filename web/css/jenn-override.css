@@ -1,0 +1,64 @@
+/* 
+    Created on  : Dec 15, 2016, 2:23:36 PM
+    Author      : Ross Bryson
+    Email       : ross@brysontech.com 
+*/
+
+.jo {
+    font-weight: 300;
+}
+h1.jo {
+    line-height: 1.2
+}
+
+h4.jo {
+    size: 18px;
+    text-transform: none;
+}
+
+h3.jo {
+    size:25px;
+}
+
+.jo-callus {
+    font-weight: 300;
+    text-transform: none;
+}
+
+.em-top-20 {
+    margin-top:20px !important;
+}
+
+.ep-20 {
+    padding:20px;
+}
+
+#hero-logo {
+    width:75%;
+    height:75%;
+}
+
+@media screen and (min-width: 768px) {
+    #hero-logo {
+        width:inherit;
+        height:inherit;
+    }
+
+    .ep-top-bottom-50 {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    h4.jo-contact-us {
+        line-height: .5 !important;
+        size:25px !important;
+    }
+    
+    h1.jo {
+        size: 65px;
+    }
+    
+    h4.jo {
+        line-height: 1.3;
+    }
+}

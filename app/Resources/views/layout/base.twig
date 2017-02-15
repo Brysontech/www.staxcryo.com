@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %} {{ meta.title }} {% endblock %}</title>
+        
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="Description" content="{{ meta.description }}" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/staxcryo_76x76.png') }}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/staxcryo_120x120.png') }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/staxcryo_152x152.png') }}">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        
+        {% block stylesheets %}
+            <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Open+Sans+Condensed:300,700">-->
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/jenn-override.css') }}">
+        {% endblock %}
+        
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        
+        {% include 'layout/footer.twig' %}
+        {% include 'Modals/alert.twig' %}
+        
+        {% block javascripts %}
+            <script src="{{ asset('js/jquery.min.js') }}"></script>
+            <script src="{{ asset('js/core.min.js') }}"></script>
+            <script src="{{ asset('js/script.js') }}"></script>
+            <script src="{{ asset('js/site.js') }}"></script>
+            <script src="{{ asset('js/tracking.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
